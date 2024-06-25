@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*-------------nav-css----------------------------------------------*/
+
+.nav-bg{
+  background-color: black;
+  width: 100%;
+  height:60px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+.nav-initials{
+  color:#ccccff;
+  font-size: 30px;
+  padding-top: 15px;
+  margin-left: 25px;
+  cursor: pointer;
+  font-family: "Great Vibes";
+}
+
+.nav-span{
+  color:#f1e0c5;
+  font-size: 30px;
+  padding-top: 15px;
+  cursor: pointer;
+  font-family: "Great Vibes";
+}
+
+.nav-list{
+  color:white;
+  font-size: 20px;
+  padding-top: 15px;
+  margin-right: 60px;
+  font-family: "Lobster";
+  cursor: pointer;
+}
+.link{
+  text-decoration: none;
+}
+.effect:hover{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/*------------------home-css---------------------------------------------------------*/
+
+.home-align{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home-link{
+  color:black;
+  text-decoration: none;
+}
+.home-greeting{
+    color:black;
+    font-size: 40px;
+    font-weight: 700;
+}
+.home-para{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.home-icons{
+  height:30px;
+  width:30px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.home-img{
+  height:500px;
+  width:600px;
+}
+.typed-out{
+  overflow: hidden;
+  border-right:5px solid black;
+  white-space: nowrap;
+  animation: typing 3s forwards steps(40,end),blinking 1.5s infinite;
+}
+
+@keyframes typing {
+  from{width:0}
+  to{width: 80%;}
+}
+
+@keyframes blinking {
+  from{border-color: transparent;}
+  to{border-color: orange;}
+}
+
+
+/*----------------------------about-css----------------------------------------------*/
+
+.about-para{
+  color:black;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 4s;
+}
+.about-image{
+  height:500px;
+  width:600px;
+  animation: fadeIn 4s;
+}
+.about-align{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+/*--------------------------------skills.css------------------------------------------*/
+
+.skills-bg{
+  background-color: lightgray;
+  height:100vh;
+  background-size: cover;
+}
+.skills-card{
+  background-color: white;
+  margin-top: 20px;
+  height:200px;
+  width:80%;
+  margin-left: 10%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveUp 1s linear forwards;
+}
+.skills-card-2{
+  background-color: white;
+  margin-top: 20px;
+  height:200px;
+  width:80%;
+  margin-left: 10%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveUp 2s linear forwards;
+}
+.skills-card-3{
+  background-color: white;
+  margin-top: 20px;
+  height:200px;
+  width:80%;
+  margin-left: 10%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveUp 3s linear forwards;
+}
+.skills-img{
+  height:100px;
+  width:150px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.skills-logo{
+  height:100px;
+  width:150px;
+  margin-left: 20px;
+}
+.skills-card-heading{
+  color:#130136;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveUp 1s linear forwards;
+}
+@keyframes moveUp {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*--------------------------------------contact-css-----------------------------------------*/
+
+.contact-icon{
+  height:30px;
+  width:30px;
+  margin-right: 25px;
+  animation: mover 1s infinite alternate;
+}
+.contact-align{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.contact-item{
+  color:#130136;
+  font-size:27px;
+  font-weight: 500;
+  display: inline-block;
+  animation: mover 1s infinite alternate;
+}
+.contact-item-align{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-img{
+  height:400px;
+  width:450px;
+}
+
+@keyframes mover {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-10px);}
+}
+
+/*-----------------------------projects.css-------------------------------------------*/
+
+
+.project-image{
+  height:200px;
+  width:300px;
+  border:4px solid black;
+  margin-right: 30px;
+  transition: 1s ease;
+}
+.project-align{
+  margin-top: 20px;
+  height:200px;
+  width:80%;
+  margin-left: 10%;
+}
+.project-heading{
+  margin-top: 20px;
+  margin-left: 5%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.project-image:hover{
+border-radius: 50%;
+transition: 1s ease;
+}
+.popup-heading{
+  color: #130136;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.popup-align{
+  display: flex;
+  flex-direction: row;
+}
+.popup-link{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 21px;
+}
+.popup-sideheading{
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.popup-button{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+.popup-buttonicon{
+  height:30px;
+  width:30px;
+}  
+
+/*------------------------------resume-css--------------------------------------*/
+
+.resume-img{
+  height:100px;
+  width:150px;
+}
+.resume-align{
+  margin-top: 15%;
+  text-align: center;
+}
+.resume-link{
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+  text-decoration: none;
+}
